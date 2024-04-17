@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --yellow : hsl(47, 88%, 63%);
+    --white : hsl(0, 0%, 100%);
+    --grey : hsl(0, 0%, 50%);
+    --black : hsl(0, 0%, 7%);
+
+}
+@font-face {
+    font-family: Myfont;
+    src: url(assets/fonts/Figtree-Italic-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Font;
+    src: url(assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--yellow);
+}
+.content{
+    background-color: var(--white);
+    width: 50%;
+    max-width: 1000px;
+    margin: 4rem 5rem;
+    padding: 1rem 2rem;
+    border-radius: 1.5rem;
+}
+.img{
+    border-radius: 1rem;
+    width: 100%;
+}
+button{
+    background-color: var(--yellow);
+    border: none;
+    outline: none;
+    padding: 0.4rem 1rem;
+    font-family: Font;
+    font-size: 0.9rem;
+    font-weight: 700;
+    border-radius: 0.3rem;
+    color: #141414;
+    margin-top: 1.5rem;
+}
+#para{
+    margin: 1rem 0.3rem;
+    font-family: Font;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #141414;
+}
+.content h1{
+    font-size: 1.6rem;
+    font-family: Font;
+    margin-bottom: 1rem;
+}
+.content h1:hover{
+    color: var(--yellow);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.content p{
+    margin-bottom: 1rem;
+    font-family: Font;
+    font-size: 1rem;
+    color: var(--grey);
+}
+#img{
+    width: 30px;
+    margin-top: 0.7rem;
+    margin-bottom: -0.5rem;
+}
+span{
+    font-size: 0.7rem;
+    font-family: Font;
+    margin-left: 0.9rem;
+    font-weight: 800;
+}
+.attribution{
+     margin: 1.5rem 1rem;
+     font-family: Font;
+}
+.attribution a{
+    outline: none;
+    text-decoration: none;
+    font-size: 0.6rem;
+    color: var(--grey);
+    font-weight: 400;
+}
+@media (max-width: 375px){
+   .content{
+    width: 100%;
+   }
+   button{
+    padding: 0.1rem 0.5rem;
+    font-size: 0.8rem;
+   }
+   .content #para{
+    font-size: 0.6rem;
+   }
+   .content h1{
+    font-size: 0.8rem;
+    margin: 0.3rem 0.1rem;
+   }
+   img{
+    width: 100%;
+   }
+   .content p{
+    font-size: 0.7rem;
+    margin: 1rem 0.3rem;
+   }
+   span{
+    font-size: 0.5rem;
+   }
+   .attribution{
+    font-size: 0.4rem;
+   }
+   .attribution a{
+    font-size: 0.4rem;
+   }
+}
